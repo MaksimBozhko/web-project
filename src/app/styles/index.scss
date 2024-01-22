@@ -1,0 +1,36 @@
+@import "reset";
+@import "./variables/global";
+@import "./themes/normal";
+@import "./themes/dark";
+@import "themes/blue";
+
+.app,
+.app_modal,
+.app_drawer {
+  font: var(--font-m);
+  color: var(--primary-color);
+}
+
+.app {
+  background: var(--bg-color);
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 7px;
+}
+
+/* Стили для ползунка скролл-бара */
+*::-webkit-scrollbar-thumb {
+  background-color: var(--inverted-primary-color); /* Цвет ползунка */
+  border-radius: 20px; /* Скругление углов */
+  border: 1px solid var(--primary-color);
+}
+
+/* Стили для трека (фоновой области скролл-бара) */
+*::-webkit-scrollbar-track {
+  background-color: var(--card-bg); /* Цвет трека */
+}

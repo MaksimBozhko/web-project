@@ -1,0 +1,8 @@
+/build
+node_modules
+.idea
+git branch -M main
+/storybook-static
+.loki/report.html
+.loki/report.json
+/reports

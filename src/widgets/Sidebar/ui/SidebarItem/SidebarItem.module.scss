@@ -1,0 +1,38 @@
+.item {
+  display: flex;
+  align-items: center;
+  width: 196px;
+  height: 38px;
+  border-radius: 6px;
+  margin: 0 10px;
+  padding-left: 20px;
+  transition: all 0.3s;
+}
+
+.icon {
+  stroke: var(--inverted-primary-color);
+  fill: none;
+}
+
+.link {
+  font: var(--font-m);
+  font-weight: 500;
+  margin-left: 10px;
+  opacity: 1;
+  white-space: nowrap;
+}
+
+.collapsed {
+  transition: all 1s;
+  .item {
+    width: 100%;
+  }
+
+  .link {
+    display: none;
+  }
+}
+
+.active {
+  background: var(--active-link);
+}
